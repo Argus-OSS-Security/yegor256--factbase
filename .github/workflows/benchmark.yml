@@ -5,9 +5,10 @@
 ---
 # yamllint disable rule:line-length
 name: benchmark
-'on':
-  push:
-    paths-ignore: ['README.md']
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     paths-ignore: ['README.md']
 concurrency:
   group: benchmark-${{ github.ref }}
   cancel-in-progress: true

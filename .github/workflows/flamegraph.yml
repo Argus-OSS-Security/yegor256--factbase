@@ -5,13 +5,14 @@
 ---
 # yamllint disable rule:line-length
 name: flamegraph
-'on':
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+# Triggers intentionally disabled for Argus-OSS-Security.
+# 'on':
+#   push:
+#     branches:
+#       - master
+#   pull_request:
+#     branches:
+#       - master
 jobs:
   flamegraph:
     timeout-minutes: 15
